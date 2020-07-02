@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" conetent="width=device-width, initial-scale=1,0">
+  <meta http-equiv="X-UA-Campatible" content="ie=edge">
+  <title>Flex</title>
+  <style>
+    body,html{
+      height:100%;
+    }
+    .fatherboxOne{
+      display:flex;
+      height:100%;
+      justify-content:center;
+      align-items:center;
+      flex-direction:row;
+      flex-wrap:wrap;
+    }
+    .fatherboxTwo{
+      display:flex;
+      height:100%;
+      justify-content:center;
+      align-items:center;
+      flex-direction:row;
+      flex-wrap:no-wrap;
+    }
+    .box{
+      background-color:red;
+      width:200px;
+      height:200px;
+      margin:0;
+      border:1px solid black;
+    }
+  </style>
+</head>
+<body>
+<div class="fatherboxOne">
+  <div class="box">1</div>
+  <div class="box">1</div>
+  <div class="box">1</div>
+  <div class="box">1</div>
+  <div class="box">1</div>
+  <div class="box">1</div>
+</div>
+<div class="fatherboxTwo">
+  <div class="box">2</div>
+  <div class="box">2</div>
+  <div class="box">2</div>
+  <div class="box">2</div>
+  <div class="box">2</div>
+  <div class="box">2</div>
+</div>
+</body>
+</html>
