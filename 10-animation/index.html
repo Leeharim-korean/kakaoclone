@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" conetent="width=device-width, initial-scale=1,0">
+  <meta http-equiv="X-UA-Campatible" content="ie=edge">
+  <title>Animations</title>
+  <style>
+    .box{
+      height:300px;
+      width:300px;
+      background-color:red;
+      animation:2s scale_and_rotate_square infinite ease-in-out;
+    }
+    @keyframes scale_and_rotate_square {
+      0%{
+        transform:none;
+      }
+      50%{
+        transform:rotate(1turn) scale(0.5,0.5);
+        background-color:orange;
+      }
+      100%{
+        transform:none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
